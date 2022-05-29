@@ -1,0 +1,36 @@
+【分からなかった用語】
+ミドルウェアとは？
+ミドルウェアでは、ルートで指定された処理を実行する前後に任意の処理を実行できる。
+RequestやResponseに含まれる値の変更や暗号化、セッション実行、認証処理などを行っている。
+ミドルウェアは、1つのミドルウェアにつき1つの役割(責務)を持つ。
+
+autoload.phpの役割は？
+composer.jsonに記載されたクラスを自動的に読み込んでくれるファイル。
+
+サービスコンテナとは？
+https://qiita.com/minato-naka/items/afa4b930a2afac23261b
+クラスをインスタンス化してくれる仕組みのこと。
+2つ特徴があり、依存解決とインスタンス化のカスタマイズが出来る。
+
+インターフェースとは？
+https://qiita.com/tkek321/items/a6112bc195b73438a9b0
+
+トレイトとは？
+https://www.php.net/manual/ja/language.oop5.traits.php
+
+カーネルとは？
+
+
+Cookieとは？
+
+
+セッションとは？
+
+
+【得た知識】
+Laravelでは、public/index.phpがエントリポイント。
+public/index.php → カーネル → ルーター → ミドルウェア → コントローラ or クロージャ
+の順でHTTPリクエストが処理される。
+逆にHTTPレスポンスは
+コントローラ or クロージャ → ミドルウェア → ルーター → カーネル → public/index.php
+の順で処理される。
